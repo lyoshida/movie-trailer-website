@@ -184,7 +184,13 @@ class Movie():
     '''
     Contains movie data
     '''
-    def __init__(self, title, poster_image_url, trailer_youtube_url, description, release_date):
+    def __init__(
+      self, 
+      title, 
+      poster_image_url, 
+      trailer_youtube_url, 
+      description, 
+      release_date):
         self.title = title
         self.poster_image_url = poster_image_url
         self.trailer_youtube_url = trailer_youtube_url
@@ -195,19 +201,26 @@ class Movie():
 # A list of Movie objects
 movies = [
     Movie('Ex Machina', 
-          'http://t3.gstatic.com/images?q=tbn:ANd9GcQe8L-1PTMlUf-si2Oy6BTd9ZtbWH7BSRSF5k5JGNATxOHzyIdg', 
+          'http://pics.filmaffinity.com/Ex_Machina-368494509-large.jpg', 
           'https://www.youtube.com/watch?v=EoQuVnKhxaM',
-          'A young programmer is selected to participate in a ground-breaking experiment in artificial intelligence by evaluating the human qualities of a breath-taking female A.I.',
+          '''A young programmer is selected to participate in a ground-breaking 
+          experiment in artificial intelligence by evaluating the human 
+          qualities of a breath-taking female A.I.''',
           '04/24/2015'),
     Movie('Spectre',
           'http://www.impawards.com/2015/posters/spectre.jpg',
           'https://www.youtube.com/watch?v=7GqClqvlObY',
-          "A cryptic message from Bond's past sends him on a trail to uncover a sinister organization. While M battles political forces to keep the secret service alive, Bond peels back the layers of deceit to reveal the terrible truth behind SPECTRE.",
+          '''A cryptic message from Bond's past sends him on a trail to uncover 
+          a sinister organization. While M battles political forces to keep the 
+          secret service alive, Bond peels back the layers of deceit to reveal 
+          the terrible truth behind SPECTRE.''',
           '11/06/2015 '),
     Movie('Batman Begins',
           'http://www.coverwhiz.com/content/Batman-Begins.jpg',
           'https://www.youtube.com/watch?v=neY2xVmOfUM',
-          'After training with his mentor, Batman begins his war on crime to free the crime-ridden Gotham City from corruption that the Scarecrow and the League of Shadows have cast upon it.',
+          '''After training with his mentor, Batman begins his war on crime to 
+          free the crime-ridden Gotham City from corruption that the Scarecrow 
+          and the League of Shadows have cast upon it.''',
           '06/15/2015')
 
 ]
